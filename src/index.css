@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  box-shadow: 0 3px 6px 0 #555;
+}
+
+.appName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.appName img {
+  width: 48px;
+  height: 48px;
+  margin: 15px;
+}
+
+.searchBox {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px;
+  border-radius: 6px;
+  margin-left: 20px;
+  width: 25%;
+  background-color: white;
+}
+
+.searchBox img {
+  width: 32px;
+  height: 32px;
+}
+
+.SearchInput input {
+  color: green;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin-left: 15px;
+}
+
+.movieListContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 25px;
+  justify-content: space-evenly;
+}
+
+.movieListContainer placeholder {
+  width: 120px;
+  height: 120px;
+  margin: 150px;
+  opacity: 50%;
+}
+
+.placeholder img {
+  object-fit: cover;
+  width: 100vw;
+  height: 80vh;
+  top: 0%;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 480px) {
+  .header {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .appName img {
+    width: 32px;
+    height: 32px;
+    margin: 10px;
+  }
+
+  .searchBox {
+    width: 80%;
+    margin-left: 10px;
+  }
+
+  .SearchInput input {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .movieListContainer {
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .movieContainer {
+    width: 150px;
+    padding: 5px;
+  }
+
+  .movieContainer img {
+    height: 220px;
+  }
+
+  .movieName {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .infoColumn {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .movieInfo {
+    font-size: 12px;
+    margin: 2px 0;
+  }
+}
+
+/* Tablets and larger devices */
+@media only screen and (min-width: 481px) {
+  .header {
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .appName img {
+    width: 48px;
+    height: 48px;
+    margin: 15px;
+  }
+
+  .searchBox {
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  .SearchInput input {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+
+  .movieListContainer {
+    padding: 30px;
+    gap: 25px;
+    justify-content: space-evenly;
+  }
+
+  .movieContainer {
+    width: 280px;
+    padding: 10px;
+  }
+
+  .movieContainer img {
+    height: 362px;
+  }
+
+  .movieName {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+
+  .infoColumn {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .movieInfo {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+}
